@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YHLTableView_Example' do
+  pod 'YHLTableView', :path => '../'
+
+  target 'YHLTableView_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
