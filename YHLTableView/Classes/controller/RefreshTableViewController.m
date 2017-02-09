@@ -76,7 +76,7 @@
     if (!_refreshHeader && self.didSupportHeaderRefreshing)
     {
         _refreshHeader = [self refreshHeaderOfTableView];
-        [self applyEMRefreshStyle:_refreshHeader];
+        [self applyEMRefreshStyle:(MJRefreshGifHeader *)_refreshHeader];
     }
     
     if (self.tableView.mj_header != _refreshHeader)
@@ -167,7 +167,7 @@
     return MSRefreshFooterStatusIdle;
 }
 
--(void)applyEMRefreshStyle:(MJRefreshGifHeader *)header{
+- (void)applyEMRefreshStyle:(MJRefreshGifHeader *) MJheader{
     NSString *imageName1 = [NSString stringWithFormat:@"tableViewLibrary.bundle/%@",@"refreshHeader_img_1"];
     NSString *imageName2 = [NSString stringWithFormat:@"tableViewLibrary.bundle/%@",@"refreshHeader_img_2"];
     NSString *imageName3 = [NSString stringWithFormat:@"tableViewLibrary.bundle/%@",@"refreshHeader_img_3"];
@@ -180,18 +180,18 @@
         [images addObject:img];
     }
     
-    [header setImages:images forState:MJRefreshStateIdle];
-    [header setImages:images forState:MJRefreshStatePulling];
-    [header setImages:images forState:MJRefreshStateRefreshing];
-    [header setImages:images forState:MJRefreshStateWillRefresh];
+    [MJheader setImages:images forState:MJRefreshStateIdle];
+    [MJheader setImages:images forState:MJRefreshStatePulling];
+    [MJheader setImages:images forState:MJRefreshStateRefreshing];
+    [MJheader setImages:images forState:MJRefreshStateWillRefresh];
     
-    header.stateLabel.textColor = [UIColor grayColor];
+    MJheader.stateLabel.textColor = [UIColor grayColor];
     
-    [header setTitle:@"下拉刷新..." forState:MJRefreshStateIdle];
-    [header setTitle:@"松开刷新..." forState:MJRefreshStatePulling];
-    [header setTitle:@"玩命刷新中..." forState:MJRefreshStateRefreshing];
+    [MJheader setTitle:@"下拉刷新..." forState:MJRefreshStateIdle];
+    [MJheader setTitle:@"松开刷新..." forState:MJRefreshStatePulling];
+    [MJheader setTitle:@"玩命刷新中..." forState:MJRefreshStateRefreshing];
     
-    header.lastUpdatedTimeLabel.hidden = YES;
+    MJheader.lastUpdatedTimeLabel.hidden = YES;
 
 }
 

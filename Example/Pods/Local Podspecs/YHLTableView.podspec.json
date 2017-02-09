@@ -13,26 +13,21 @@
     "tag": "1.0.0"
   },
   "platforms": {
-    "ios": "7.0",
-    "watchos": "2.0"
+    "ios": "7.0"
   },
   "source_files": "YHLTableView/Classes/**/*.{h,c,m}",
-  "resources": "YHLTableView/Classes/**/*.{xib,nib,plist}",
   "requires_arc": true,
   "resource_bundles": {
-    "tableViewLibrary": [
+    "YHLTableView": [
       "YHLTableView/Assets/**/*.png"
     ]
   },
   "dependencies": {
     "UITableView+FDTemplateLayoutCell": [
-      "~> 1.5.beta"
-    ],
-    "commonLib": [
-      "~> 0.1.0"
+
     ],
     "MJRefresh": [
-      "~> 3.1.10"
+
     ]
   }
 }

@@ -1,11 +1,9 @@
 PODS:
-  - commonLib (0.1.0)
   - MJRefresh (3.1.12)
-  - UITableView+FDTemplateLayoutCell (1.5.beta)
+  - UITableView+FDTemplateLayoutCell (1.4)
   - YHLTableView (1.0.0):
-    - commonLib (~> 0.1.0)
-    - MJRefresh (~> 3.1.10)
-    - UITableView+FDTemplateLayoutCell (~> 1.5.beta)
+    - MJRefresh
+    - UITableView+FDTemplateLayoutCell
 
 DEPENDENCIES:
   - YHLTableView (from `../`)
@@ -15,10 +13,9 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  commonLib: ab62a1e68052bfccdbc91b5a0644cc06edb99efb
   MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
-  UITableView+FDTemplateLayoutCell: 02b508ab1cb4cea16a8c17ac83d2cd1fd72124f9
-  YHLTableView: 62abdced4e8070b9c1c03565471220c2cfdac4f5
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
+  YHLTableView: d6499eafc5b4720071a0e0d5d89636e7ee22ebde
 
 PODFILE CHECKSUM: 20cb7735c3980a1bf1f184b4aeba6af7dfbf72bd
 

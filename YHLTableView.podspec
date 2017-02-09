@@ -14,14 +14,14 @@ s.author           = { "sean.yang" => "272789124@qq.com" }
 s.source           = { :git => "https://github.com/yanghl/YHLTableView.git", :tag => s.version.to_s }
 s.ios.deployment_target = '7.0'
 s.source_files = 'YHLTableView/Classes/**/*.{h,c,m}'
-s.resources = 'YHLTableView/Classes/**/*.{xib,nib,plist}'
+#s.resources = 'YHLTableView/Classes/**/*.{xib,nib,plist}'
 s.requires_arc = true
 s.resource_bundles = {
-'tableViewLibrary' => ['YHLTableView/Assets/**/*.png']
+'YHLTableView' => ['YHLTableView/Assets/**/*.png']
 }
-s.watchos.deployment_target = '2.0'
+#s.watchos.deployment_target = '2.0'
 
-s.dependency 'UITableView+FDTemplateLayoutCell', '~> 1.5.beta'
-s.dependency 'commonLib', '~> 0.1.0'
-s.dependency 'MJRefresh', '~> 3.1.10'
+s.dependency 'UITableView+FDTemplateLayoutCell'
+#s.dependency 'commonLib', '~> 0.1.0'
+s.dependency 'MJRefresh'
 end
