@@ -1,4 +1,7 @@
-use_frameworks!
+platform :ios, '7.0'
+
+source 'https://github.com/yanghl/seanspec.git'
+source 'https://github.com/CocoaPods/Specs.git'
 
 target 'YHLTableView_Example' do
   pod 'YHLTableView', :path => '../'
@@ -6,6 +9,6 @@ target 'YHLTableView_Example' do
   target 'YHLTableView_Tests' do
     inherit! :search_paths
 
-    pod 'FBSnapshotTestCase'
+#pod 'FBSnapshotTestCase'
   end
 end

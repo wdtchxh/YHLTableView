@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5B2748F8CF967B13955EB5CB /* Pods_YHLTableView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14DB2F80EF598A2D2EFC050A /* Pods_YHLTableView_Example.framework */; };
+		0847E57C1E4C0D4400EDAD72 /* yhlData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0847E5741E4C0D4400EDAD72 /* yhlData.m */; };
+		0847E57D1E4C0D4400EDAD72 /* yhlTBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0847E5761E4C0D4400EDAD72 /* yhlTBViewController.m */; };
+		0847E57E1E4C0D4400EDAD72 /* yhlYWCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0847E5781E4C0D4400EDAD72 /* yhlYWCellModel.m */; };
+		0847E57F1E4C0D4400EDAD72 /* yhlYWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0847E57A1E4C0D4400EDAD72 /* yhlYWTableViewCell.m */; };
+		0847E5801E4C0D4400EDAD72 /* yhlYWTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0847E57B1E4C0D4400EDAD72 /* yhlYWTableViewCell.xib */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -22,8 +26,9 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
-		810E33F3DAD5A0AA68247F71 /* Pods_YHLTableView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CE44621E9130B0AC347BC9 /* Pods_YHLTableView_Tests.framework */; };
+		7207F92F811F8F0E94F505B2 /* libPods-YHLTableView_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C90B7B4C3B44DFD4F775578E /* libPods-YHLTableView_Tests.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		EE53AE337F2AA5512C8976B1 /* libPods-YHLTableView_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13E2899D7C63C4652319BAB3 /* libPods-YHLTableView_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +42,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		14DB2F80EF598A2D2EFC050A /* Pods_YHLTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHLTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0847E5731E4C0D4400EDAD72 /* yhlData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yhlData.h; sourceTree = "<group>"; };
+		0847E5741E4C0D4400EDAD72 /* yhlData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yhlData.m; sourceTree = "<group>"; };
+		0847E5751E4C0D4400EDAD72 /* yhlTBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yhlTBViewController.h; sourceTree = "<group>"; };
+		0847E5761E4C0D4400EDAD72 /* yhlTBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yhlTBViewController.m; sourceTree = "<group>"; };
+		0847E5771E4C0D4400EDAD72 /* yhlYWCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yhlYWCellModel.h; sourceTree = "<group>"; };
+		0847E5781E4C0D4400EDAD72 /* yhlYWCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yhlYWCellModel.m; sourceTree = "<group>"; };
+		0847E5791E4C0D4400EDAD72 /* yhlYWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = yhlYWTableViewCell.h; sourceTree = "<group>"; };
+		0847E57A1E4C0D4400EDAD72 /* yhlYWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = yhlYWTableViewCell.m; sourceTree = "<group>"; };
+		0847E57B1E4C0D4400EDAD72 /* yhlYWTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = yhlYWTableViewCell.xib; sourceTree = "<group>"; };
+		13E2899D7C63C4652319BAB3 /* libPods-YHLTableView_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YHLTableView_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27C38B8EB0A8CEEF7B7D8C6B /* Pods-YHLTableView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHLTableView_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHLTableView_Tests/Pods-YHLTableView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		32C058CA7A72B8633067F0FA /* Pods-YHLTableView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHLTableView_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YHLTableView_Example/Pods-YHLTableView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		38C80A8B49A2834208C69554 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		3CE843AB4209FF449A50770C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		38C80A8B49A2834208C69554 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3CE843AB4209FF449A50770C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4E141FF24C3094E0ACA8465F /* Pods-YHLTableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHLTableView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHLTableView_Tests/Pods-YHLTableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* YHLTableView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YHLTableView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -63,10 +77,10 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		645609CB91331A70E7B99A67 /* Pods-YHLTableView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YHLTableView_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YHLTableView_Example/Pods-YHLTableView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		6BC75991343B43EEF2824DBB /* YHLTableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = YHLTableView.podspec; path = ../YHLTableView.podspec; sourceTree = "<group>"; };
+		6BC75991343B43EEF2824DBB /* YHLTableView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = YHLTableView.podspec; path = ../YHLTableView.podspec; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D2CE44621E9130B0AC347BC9 /* Pods_YHLTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YHLTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C90B7B4C3B44DFD4F775578E /* libPods-YHLTableView_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YHLTableView_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +91,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				5B2748F8CF967B13955EB5CB /* Pods_YHLTableView_Example.framework in Frameworks */,
+				EE53AE337F2AA5512C8976B1 /* libPods-YHLTableView_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +102,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				810E33F3DAD5A0AA68247F71 /* Pods_YHLTableView_Tests.framework in Frameworks */,
+				7207F92F811F8F0E94F505B2 /* libPods-YHLTableView_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +137,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				14DB2F80EF598A2D2EFC050A /* Pods_YHLTableView_Example.framework */,
-				D2CE44621E9130B0AC347BC9 /* Pods_YHLTableView_Tests.framework */,
+				13E2899D7C63C4652319BAB3 /* libPods-YHLTableView_Example.a */,
+				C90B7B4C3B44DFD4F775578E /* libPods-YHLTableView_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,6 +146,15 @@
 		6003F593195388D20070C39A /* Example for YHLTableView */ = {
 			isa = PBXGroup;
 			children = (
+				0847E5731E4C0D4400EDAD72 /* yhlData.h */,
+				0847E5741E4C0D4400EDAD72 /* yhlData.m */,
+				0847E5751E4C0D4400EDAD72 /* yhlTBViewController.h */,
+				0847E5761E4C0D4400EDAD72 /* yhlTBViewController.m */,
+				0847E5771E4C0D4400EDAD72 /* yhlYWCellModel.h */,
+				0847E5781E4C0D4400EDAD72 /* yhlYWCellModel.m */,
+				0847E5791E4C0D4400EDAD72 /* yhlYWTableViewCell.h */,
+				0847E57A1E4C0D4400EDAD72 /* yhlYWTableViewCell.m */,
+				0847E57B1E4C0D4400EDAD72 /* yhlYWTableViewCell.xib */,
 				6003F59C195388D20070C39A /* YHLAppDelegate.h */,
 				6003F59D195388D20070C39A /* YHLAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -283,6 +306,7 @@
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				0847E5801E4C0D4400EDAD72 /* yhlYWTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +421,10 @@
 				6003F59E195388D20070C39A /* YHLAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* YHLViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				0847E57E1E4C0D4400EDAD72 /* yhlYWCellModel.m in Sources */,
+				0847E57C1E4C0D4400EDAD72 /* yhlData.m in Sources */,
+				0847E57D1E4C0D4400EDAD72 /* yhlTBViewController.m in Sources */,
+				0847E57F1E4C0D4400EDAD72 /* yhlYWTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,7 +507,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -512,7 +540,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -530,6 +558,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -545,6 +574,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
