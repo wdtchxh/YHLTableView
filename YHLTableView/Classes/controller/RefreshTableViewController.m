@@ -168,9 +168,9 @@
 }
 
 - (void)applyEMRefreshStyle:(MJRefreshGifHeader *) MJheader{
-    NSString *imageName1 = [NSString stringWithFormat:@"tableViewLibrary.bundle/%@",@"refreshHeader_img_1"];
-    NSString *imageName2 = [NSString stringWithFormat:@"tableViewLibrary.bundle/%@",@"refreshHeader_img_2"];
-    NSString *imageName3 = [NSString stringWithFormat:@"tableViewLibrary.bundle/%@",@"refreshHeader_img_3"];
+    NSString *imageName1 = [NSString stringWithFormat:@"YHLTableView.bundle/%@",@"refreshHeader_img_1"];
+    NSString *imageName2 = [NSString stringWithFormat:@"YHLTableView.bundle/%@",@"refreshHeader_img_2"];
+    NSString *imageName3 = [NSString stringWithFormat:@"YHLTableView.bundle/%@",@"refreshHeader_img_3"];
     
     NSArray *imageNames = @[imageName1, imageName2, imageName3];
     NSMutableArray *images = [NSMutableArray array];
