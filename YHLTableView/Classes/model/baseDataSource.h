@@ -53,3 +53,9 @@
 - (BOOL)isEmpty;
 
 @end
+
+@interface baseDataSource(creation)
+
+- (instancetype)initWithDatasource:(baseDataSource *)datasource;
+
+@end

@@ -24,4 +24,5 @@ s.resource_bundles = {
 s.dependency 'UITableView+FDTemplateLayoutCell'
 #s.dependency 'commonLib', '~> 0.1.0'
 s.dependency 'MJRefresh'
+s.dependency 'AFNetworking'
 end

@@ -9,7 +9,7 @@
 #ifndef tableViewLibrary_h
 #define tableViewLibrary_h
 
-#import "baseTableViewController.h"
+#import "YHLTableViewController.h"
 #import "RefreshTableViewController.h"
 #import "baseCellModel.h"
 #import "baseMutableDataSource.h"

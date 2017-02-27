@@ -6,21 +6,15 @@
 //
 //
 
-#import "baseTableViewController.h"
-
+#import "YHLTableViewController.h"
 #import <MJRefresh/MJRefresh.h>
+
+#import "YHLTableRequestModel.h"
 
 
 @protocol MSRefreshProtocol <NSObject>
 
 @required
-
-// 触发下拉刷新操作(动画)调用
-- (void)refreshHeaderDidRefresh:(MJRefreshHeader *)refreshHeader;
-
-// 底部上拉刷新触发时调用
-- (void)refreshFooterDidRefresh:(MJRefreshFooter *)refreshFooter;
-
 /**
  *  viewwillappear\viewdidappear 的时候调用，供子类调用刷新数据
  *  @param animated animated description
@@ -41,14 +35,24 @@ typedef enum : NSUInteger {
     
 } MSRefreshFooterStatus;
 
-@interface RefreshTableViewController : baseTableViewController<MSRefreshProtocol>
-
+@interface RefreshTableViewController : YHLTableViewController<MSRefreshProtocol>
+{
+    YHLTableRequestModel *_model;
+}
+@property (nonatomic, strong, readonly) YHLTableRequestModel *model;
 
 @property (nonatomic, assign) BOOL didSupportHeaderRefreshing;// default is yes
 @property (nonatomic, assign) BOOL didSupportFooterRefreshing;//default is no
 
 @property (nonatomic, strong, readonly) MJRefreshHeader *refreshHeader;
 @property (nonatomic, strong, readonly) MJRefreshFooter *refreshFooter;
+
+/**
+ * 加载model，默认是 YHLTableRequestModel
+ * 子类可通过复写方法生成自定义的model
+ */
+- (void)loadRequestModel;
+
 
 - (void)beginHeaderRefreshing; // 手动调用 下拉刷新动作 有动画
 - (void)endHeaderRefreshing; // 结束刷新状态
@@ -59,4 +63,23 @@ typedef enum : NSUInteger {
 - (void)setRefreshFooterStatus:(MSRefreshFooterStatus)status; // 设置footer状态
 - (MSRefreshFooterStatus)refreshFooterStatus;
 
+
+/**
+ * 获取第一页、下拉刷新时，不现实footer 没有更多状态
+ */
+- (void)updateHeaderWhenRequestFinished;
+/**
+ *  翻页请求时，没有更多数据不显示footer
+ */
+- (void)updateFooterWhenRequestFinished;
+/*
+ * 请求失败 处理函数
+ */
+-(void)updateEmptyViewWithErrorCode;
+/*
+ * 请求成功 处理函数
+ */
+- (void)responseWithModel:(id)model;
+
+- (void)headerRefreshing;
 @end

@@ -6,7 +6,7 @@
 //  Copyright © 2016年 sean.yang. All rights reserved.
 //
 #import <YHLTableView/RefreshTableViewController.h>
-#import <YHLTableView/baseTableViewController.h>
+#import <YHLTableView/YHLTableViewController.h>
 /*
     1.获取json数据 <网络请求 缓存读取>
     2.将json解析成item                

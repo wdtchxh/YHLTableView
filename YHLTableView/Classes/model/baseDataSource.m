@@ -190,3 +190,20 @@
     }
 }
 @end
+
+
+
+@implementation baseDataSource(creation)
+
+- (instancetype)initWithDatasource:(baseDataSource *)datasource
+{
+    self = [super init];
+    if (self) {
+        _items = [[self itemsClass] arrayWithArray:datasource.items];
+        _sections = [[self sectionsClass] arrayWithArray:datasource.sections];
+    }
+    return self;
+    
+}
+
+@end

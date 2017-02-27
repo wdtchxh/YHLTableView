@@ -13,7 +13,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         self.Class             = [yhlYWTableViewCell class];
-        self.height            = 80;
+        self.cacheHeight            = 80;
         self.reuseIdentify     = @"yhlYWTableViewCell";
         self.isRegisterByClass = NO;
     }

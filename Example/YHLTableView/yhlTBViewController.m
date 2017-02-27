@@ -9,7 +9,7 @@
 #import "yhlTBViewController.h"
 #import "baseMutableDataSource.h"
 #import "baseCellModel.h"
-#import "baseTableViewController.h"
+#import "YHLTableViewController.h"
 #import "yhlYWCellModel.h"
 #import "yhlData.h"
 @interface yhlTBViewController ()
@@ -35,7 +35,7 @@
     
     baseMutableDataSource *data=[[baseMutableDataSource alloc] initWithItems:items sections:sections];
     
-    [self reloadPages:data];
+    [self reloadPages:nil];
     
     self.didSupportFooterRefreshing=YES;
     [self refreshFooter];

@@ -28,6 +28,9 @@
     ],
     "MJRefresh": [
 
+    ],
+    "AFNetworking": [
+
     ]
   }
 }
