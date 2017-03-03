@@ -55,6 +55,12 @@ typedef void (^baseTableViewCellEventHandler)(UITableViewCell *cell,id cellmodel
 
 @property (nonatomic, copy)baseTableViewCellEventHandler eventHandler;
 
+
+- (void)requestWithType:(baseTableRequestType)requestType
+            paramSetter:(baseTableRequestModelParamSetter)paramSetter
+                 parser:(baseTableRequestModelParser)parser
+             completion:(void (^)(baseHTTPResponse *response, BOOL success))completion;
+
 - (void)requestWithType:(void (^)(baseHTTPResponse *response, BOOL success))completion;
 
 /**

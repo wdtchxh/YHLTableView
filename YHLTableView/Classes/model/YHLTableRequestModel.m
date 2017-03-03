@@ -55,8 +55,11 @@
     return urlString;
 }
 
-- (void)requestWithType:(void (^)(baseHTTPResponse *response, BOOL success))completion
-{
+- (void)requestWithType:(baseTableRequestType)requestType
+            paramSetter:(baseTableRequestModelParamSetter)paramSetter
+                 parser:(baseTableRequestModelParser)parser
+             completion:(void (^)(baseHTTPResponse *response, BOOL success))completion{
+    
     NSString *urlString = [self urlStringForRequestType:self.requestType];
     NSMutableDictionary *param = [self parameterForRequestType:self.requestType];
     if (self.paramSetter)
@@ -105,6 +108,11 @@
                 completion(response,success);
             }
         }];
+    
+}
+- (void)requestWithType:(void (^)(baseHTTPResponse *response, BOOL success))completion
+{
+    [self requestWithType:self.requestType paramSetter:self.paramSetter parser:self.parser completion:completion];
 }
 
 - (void)parseParamOfDefaultResponse:(baseHTTPResponse *)response
