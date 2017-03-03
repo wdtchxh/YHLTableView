@@ -109,7 +109,7 @@ NSString * const baseHTTPSessionManagerTaskDidFailedNotification = @"com.meiti.t
         uploadLen = [data length];
     }
     
-    URLString = [self addParamToURL:URLString dict:newParameters];
+    //URLString = [self addParamToURL:URLString dict:newParameters];
     
     NSMutableURLRequest *request = [manager.requestSerializer requestWithMethod:method URLString:URLString parameters:newParameters error:&serializationError];
     
