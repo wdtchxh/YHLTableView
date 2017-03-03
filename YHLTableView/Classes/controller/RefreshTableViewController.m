@@ -51,7 +51,7 @@
     [self loadRequestModel];
     [self refreshHeader];
     //开始加载数据
-    [self headerRefreshing];
+    //[self headerRefreshing];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
